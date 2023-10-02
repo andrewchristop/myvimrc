@@ -43,8 +43,10 @@ set tags+=~/.vim/tags/qt4
 
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
 let g:DoxygenToolkit_authorName="John Doe <john@doe.com>"
-set statusline=%<%(%F%m%r%h%w%y%=%)\ [FORMAT=%{&ff}]\ [%04l,%04c]\ [LASTMOD=%{strftime('%Y/%m/%d-%H:%M:%S',getftime(expand('%:p')))}]
+"set statusline=%<%(%F%m%r%h%w%y%=%)\ [FORMAT=%{&ff}]\ [%04l,%04c]\ [LASTMOD=%{strftime('%Y/%m/%d-%H:%M:%S',getftime(expand('%:p')))}]
+set statusline=%<%(%F%m%r%h%w%=%)\ [%04l,%04c]
 set statusline+=%=
+set statusline+=[FORMAT=%{&ff}]\ 
 set statusline+=%{&fileencoding}
 " Enhanced keyboard mappings
 "
